@@ -1,5 +1,3 @@
-import Glide from "./node_modules/@glidejs/glide/dist/glide.esm.js"
-
 new Glide(".glide", {
   type: "carousel",
   perView: 4.5,
@@ -38,14 +36,14 @@ window.onload = function () {
 }
 
 //------------Smooth scroll-------------
-for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener("click", function (evt) {
-    evt.preventDefault()
-    const id = smoothLink.getAttribute("href")
+// for (let smoothLink of smoothLinks) {
+//   smoothLink.addEventListener("click", function (evt) {
+//     evt.preventDefault()
+//     const id = smoothLink.getAttribute("href")
 
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    })
-  })
-}
+//     document.querySelector(id).scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//     })
+//   })
+// }
