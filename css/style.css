@@ -115,8 +115,6 @@ section {
       -ms-transform: none;
           transform: none;
   padding: 8px;
-  -webkit-transition: all 0.3ms ease-in-out;
-  transition: all 0.3ms ease-in-out;
   fill: rgba(34, 34, 34, 0.3);
 }
 
