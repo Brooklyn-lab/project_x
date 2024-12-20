@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="logo">
+          <picture class="logo__image">
+            <source srcset="./img/podos-logo.webp" type="image/webp" />
+            <img src="./img/podos-logo.png" alt="PODOS logo" />
+          </picture>
+          <span class="logo__text">PODOS</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">O mnie</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Dlaczego warto wybrać?</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Usługi i ceny</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Adres</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Moje prace</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <ul class="lang-switcher">
+          <li class="lang-switcher__item">
+            <a class="lang-switcher__link lang-switcher__link_active" href="#"
+              >PL</a
+            >
+          </li>
+          <li class="lang-switcher__item">
+            <a class="lang-switcher__link" href="#">UA</a>
+          </li>
+        </ul>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="tel:+48574154801" class="contacts__link">
+              <img
+                src="./img/phone.svg"
+                width="16"
+                height="16"
+                alt="phone"
+                class="contacts__icon"
+              />
+              +48574154801
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:podoswroclaw@gmail.com" class="contacts__link">
+              <img
+                src="./img/mail.svg"
+                width="16"
+                height="11.5"
+                alt="email"
+                class="contacts__icon"
+              />
+              podoswroclaw@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="container hero__container">
+            <h1 class="hero__title">
+              <span class="hero__title_accent"
+                >PodOS Gabinet Podologiczny Wrocław – </span
+              >zdrowe stopy - łatwe chodzenie!
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <div class="about__header">
+              <h2 class="about__title">o mnie</h2>
+              <h3>
+                PodOS - to miejsce, w którym dbałość o zdrowie i estetykę stóp
+                łączy się z profesjonalizmem i nowoczesnymi metodami leczenia.
+              </h3>
+            </div>
+            <div>
+              <p class="about__text">
+                Nazywam się Olena Stepaniuk, jestem wykwalifikowanym specjalistą
+                - podologiem. Oferuję kompleksowe usługi podologiczne, które
+                pomagają zachować zdrowie stóp niezależnie od wieku.
+              </p>
+              <p class="about__text">
+                Indywidualne podejście do każdego pacjenta zaczynam od
+                dokładnego badania i wywiadu, podczas którego poznaję problemy i
+                przyczyny ich pojawiania się. Podczas zabiegu staram się jak
+                najdokładniej przekazać i wyjaśnić pacjentowi, jakie metody
+                leczenia i leki zostaną zastosowane. Podaję zalecenia dotyczące
+                wykonywania zabiegów pielęgnacyjnych w domu. Przecież celem
+                każdego specjalisty jest nie tylko leczenie chorób, z którymi
+                przychodzą pacjenci, ale także pomoc w zapobieganiu ich
+                pojawianiu się.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <picture>
+              <img
+                src="./img/about.png"
+                width="590"
+                height="700"
+                alt="Olena Stepaniuk podolog"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="why-us">
+        <div class="container why-us__container">
+          <ul class="why-us__image-list">
+            <li class="why-us__image-item">
+              <div class="why-us__image why-us__image_left-top">
+                <picture>
+                  <img src="./img/cabinet_1.png" alt="" />
+                </picture>
+              </div>
+              <div class="why-us__image why-us__image_right-top">
+                <picture>
+                  <img src="./img/cabinet_2.png" alt="" />
+                </picture>
+              </div>
+            </li>
+            <li class="why-us__image-item">
+              <div class="why-us__image why-us__image_left-bottom">
+                <picture>
+                  <img src="./img/cabinet_3.png" alt="" />
+                </picture>
+              </div>
+              <div class="why-us__image why-us__image_right-bottom">
+                <picture>
+                  <img src="./img/cabinet_4.png" alt="" />
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <div class="why-us__content">
+            <div class="why-us__header">
+              <h2 class="why-us__title">Dlaczego warto wybrać PodOS?</h2>
+              <h3>
+                PodOS to przestrzeń stworzona z myślą o Twoim komforcie i
+                zdrowiu.
+              </h3>
+            </div>
+            <p class="why-us__text">
+              Oferta obejmuje profilaktykę i leczenie różnych form schorzeń:
+              wrastających paznokci, odcisków, modzeli, grzybic stóp i paznokci
+              itp.
+            </p>
+            <p class="why-us__text">
+              Gabinet wyposażony jest w nowoczesny i profesjonalny sprzęt.
+              Podczas zabiegów korzystam wyłącznie z profesjonalnych narzędzi i
+              specjalistycznych leków.
+            </p>
+            <p class="why-us__text">
+              Wszystkie instrumenty po zabiegach są sterylizowane w myjce
+              ultradźwiękowej oraz w autoklawie, po każdym zabiegu miejsce pracy
+              jest dezynfekowane, wszystkie jednorazowe urządzenia
+              zabezpieczające użyte podczas zabiegu należy utylizować zgodnie z
+              przepisami bezpieczeństwa i higieny pracy, co sprawia, że
+              ​​leczenie pacjentów w moim gabinecie jest bezpieczne.
+            </p>
+            <p class="why-us__text">
+              Jeśli szukasz skutecznych rozwiązań do pielęgnacji stóp, gabinet
+              PodOS,  będzie właściwym wyborem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="certificates">
+        <div class="container">
+          <div class="certificates__header">
+            <h2 class="certificates__title">moje certyfikaty</h2>
+            <p>
+              W moim gabinecie oferuję specjalistyczne i nowoczesne metody
+              leczenia. Stosuję systemy korekcji UniBrace, nici tytanowe, które
+              szybko pomagają w rozwiązaniu problemów wrastających i
+              zdeformowanych paznokci. Prowadzę terapię polegającą na leczeniu
+              brodawek, pęknięć na piętach, eliminowaniu modzeli, odcisków.
+            </p>
+          </div>
+
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-1@2x.webp 2x,
+                        ./img/certificates/certificat-1.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-1.png"
+                      alt="Certyfikat ForFeet 12.12.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-2@2x.webp 2x,
+                        ./img/certificates/certificat-2.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-2.png"
+                      alt="Certyfikat Spasja 1.12.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-3@2x.webp 2x,
+                        ./img/certificates/certificat-3.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-3.png"
+                      alt="Certyfikat Spasja 29-30.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-4@2x.webp 2x,
+                        ./img/certificates/certificat-4.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-4.png"
+                      alt="Certyfikat ForFeet 27-29.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-5@2x.webp 2x,
+                        ./img/certificates/certificat-5.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-5.png"
+                      alt="Certyfikat UniBrace 05.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-6@2x.webp 2x,
+                        ./img/certificates/certificat-6.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-6.png"
+                      alt="Certyfikat ForFeet 31.10.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-7@2x.webp 2x,
+                        ./img/certificates/certificat-7.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-7.png"
+                      alt="Certyfikat PodoRoom 04.03.2023"
+                    />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+
+            <div data-glide-el="controls" class="controls">
+              <button
+                data-glide-dir="<"
+                class="glide__arrow glide__arrow--left"
+              >
+                <svg
+                  viewBox="0 0 24 22"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
+                  />
+                </svg>
+              </button>
+              <button
+                data-glide-dir=">"
+                class="glide__arrow glide__arrow--right"
+              >
+                <svg
+                  viewBox="0 0 24 22"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services__header">
+            <h2 class="services__title">Usługi i ceny w PodOS</h2>
+            <div class="services__header-content">
+              <div class="services__header-item--left">
+                <h3>
+                  W swojej pracy kieruję się przejrzystością i lojalnością
+                  cenową.
+                </h3>
+              </div>
+              <div class="services__header-item--right">
+                <p class="services__text">
+                  Gabinet PodOS to miejsce komfortu, gdzie każdy zabieg
+                  dostosowywany jest do potrzeb pacjenta, pozwalając na
+                  uzyskanie optymalnych efektów.
+                </p>
+                <p class="services__text">
+                  Dla dzieci i pacjentów w podeszłym wieku - udzielany jest
+                  stały rabat na wszystkie rodzaje usług.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="services__list">
+            <div class="services__item">
+
+            </div>
+          </div> -->
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="accordion-title"
+                  >Why is the moon sometimes out during the day?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false">
+                <span class="accordion-title">Why is the sky blue?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title"
+                  >Will we ever discover aliens?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title"
+                  >How much does the Earth weigh?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-5" aria-expanded="false">
+                <span class="accordion-title">How do airplanes stay up?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="container">
+          <div class="works__header">
+            <div class="works__header-item--left">
+              <h2 class="works__title">moje prace</h2>
+              <h3>
+                PodOS to gwarancja opieki na najwyższym poziomie. Odwiedź i
+                dowiedz się jak mogę Ci pomóc!
+              </h3>
+            </div>
+            <div class="works__header-item--right">
+              <p class="works__text">
+                W moim gabinecie oferuję specjalistyczne i nowoczesne metody
+                leczenia. Stosuję systemy korekcji UniBrace, nici tytanowe,
+                które szybko pomagają w rozwiązaniu problemów wrastających i
+                zdeformowanych paznokci. Prowadzę terapię polegającą na leczeniu
+                brodawek, pęknięć na piętach, eliminowaniu modzeli, odcisków. 
+              </p>
+              <p class="works__text">
+                Wykonuję zabiegi z serii SPA - kąpiele parafinowe na dłonie i
+                stopy, które mają nie tylko dobry efekt kosmetyczny dla skóry,
+                ale także zdrowotny, fizjoterapeutyczny dla stawów. Oferuję
+                masaż z elementami refleksologii jako odrębny rodzaj usługi, a
+                także jako zakończenie zabiegów SPA.
+              </p>
+            </div>
+          </div>
+
+          <div class="glide glide-works">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-1@2x.webp 2x,
+                        ./img/certificates/certificat-1.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-1.png"
+                      alt="Certyfikat ForFeet 12.12.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-2@2x.webp 2x,
+                        ./img/certificates/certificat-2.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-2.png"
+                      alt="Certyfikat Spasja 1.12.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-3@2x.webp 2x,
+                        ./img/certificates/certificat-3.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-3.png"
+                      alt="Certyfikat Spasja 29-30.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-4@2x.webp 2x,
+                        ./img/certificates/certificat-4.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-4.png"
+                      alt="Certyfikat ForFeet 27-29.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-5@2x.webp 2x,
+                        ./img/certificates/certificat-5.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-5.png"
+                      alt="Certyfikat UniBrace 05.11.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-6@2x.webp 2x,
+                        ./img/certificates/certificat-6.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-6.png"
+                      alt="Certyfikat ForFeet 31.10.2024"
+                    />
+                  </picture>
+                </li>
+                <li class="glide__slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/certificates/certificat-7@2x.webp 2x,
+                        ./img/certificates/certificat-7.webp    1x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./img/certificates/certificat-7.png"
+                      alt="Certyfikat PodoRoom 04.03.2023"
+                    />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+
+            <div data-glide-el="controls" class="controls">
+              <button
+                data-glide-dir="<"
+                class="glide__arrow glide__arrow--left"
+              >
+                <svg
+                  viewBox="0 0 24 22"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
+                  />
+                </svg>
+              </button>
+              <button
+                data-glide-dir=">"
+                class="glide__arrow glide__arrow--right"
+              >
+                <svg
+                  viewBox="0 0 24 22"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
