@@ -12,17 +12,39 @@ new Glide(".glide-works", {
 
 const items = document.querySelectorAll(".accordion button")
 
-function toggleAccordion() {
+// Функція для закриття всіх акардіонів
+function closeAllAccordions() {
+  items.forEach((item) => item.setAttribute("aria-expanded", "false"))
+}
+
+// Функція для переключення акардіону
+function toggleAccordion(event) {
   const itemToggle = this.getAttribute("aria-expanded")
 
-  for (let i = 0; i < items.length; i++) {
-    items[i].setAttribute("aria-expanded", "false")
-  }
+  // Закриваємо всі акардіони
+  closeAllAccordions()
 
-  if (itemToggle == "false") {
+  // Відкриваємо, якщо раніше був закритий
+  if (itemToggle === "false") {
     this.setAttribute("aria-expanded", "true")
   }
+
+  // Зупиняємо поширення події, щоб не викликати закриття акардіона при кліку на кнопці
+  event.stopPropagation()
 }
+
+// Додаємо обробник до кожної кнопки акардіону
+items.forEach((item) => {
+  item.addEventListener("click", toggleAccordion)
+})
+
+// Закриття акардіону при кліку поза його межами
+document.addEventListener("click", (event) => {
+  // Перевіряємо, чи клік був за межами акардіона
+  if (!event.target.closest(".accordion")) {
+    closeAllAccordions()
+  }
+})
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion))
 

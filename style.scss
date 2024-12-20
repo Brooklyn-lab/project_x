@@ -3,8 +3,10 @@ $base1: #222222;
 $base2: #fffbfb;
 $base3: #f5f5f5;
 $base4: #eaeaea;
+$base5: #000000;
 $base-accent: #eba37a;
-$base: #fff;
+$base-accent2: #fff6f2;
+$base: #ffffff;
 $logo: #162221;
 
 *,
@@ -122,6 +124,7 @@ section {
   &:hover {
     width: 44px;
     height: 44px;
+    transition: background-color 200ms linear;
     background-color: $base1;
     fill: $base;
   }
@@ -430,20 +433,47 @@ section {
   flex-wrap: wrap;
   gap: 16px;
 
-  .accordion__column {
+  &__column {
     width: calc(50% - 8px);
   }
 
-  .accordion-item {
+  .accordion__item {
     background-color: $base3;
-    button[aria-expanded="true"] {
-      border-bottom: 1px solid #03b5d2;
-    }
 
     &:not(:last-child) {
       margin-bottom: 16px;
     }
   }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text--accent {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    color: $base5;
+  }
+
+  &__content {
+    background-color: $base-accent2;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    position: relative;
+  }
+
+  &__content-wrapper {
+    padding-left: 16px;
+    border-left: solid 2px $base-accent;
+  }
+
   button {
     position: relative;
     display: block;
@@ -458,80 +488,74 @@ section {
     border: none;
     background: none;
     outline: none;
+
     &:hover,
     &:focus {
       cursor: pointer;
-      color: #03b5d2;
       &::after {
         cursor: pointer;
-        color: #03b5d2;
-        border: 1px solid #03b5d2;
       }
     }
-    .accordion-title {
-      padding: 1em 1.5em 1em 0;
+
+    .accordion__title {
+      font-size: 18px;
+      line-height: 44px;
+      letter-spacing: 0.2px;
+      color: $base1;
     }
+
     .icon {
-      display: inline-block;
       position: absolute;
-      top: 18px;
-      right: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid;
-      border-radius: 22px;
-      &::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 9px;
-        left: 5px;
-        width: 10px;
-        height: 2px;
-        background: currentColor;
-      }
-      &::after {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 5px;
-        left: 9px;
-        width: 2px;
-        height: 10px;
-        background: currentColor;
-      }
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+      width: calc(40px + 8px);
+      height: calc(40px + 8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      fill: $base1;
+      transition: fill 200ms linear, background-color 200ms linear,
+        transform 200ms linear;
     }
   }
+
   button[aria-expanded="true"] {
-    color: #03b5d2;
+    background-color: $base-accent2;
+    padding-bottom: 8px;
+
     .icon {
-      &::after {
-        width: 0;
+      fill: #ffffff;
+      background-color: $base-accent;
+      transition: fill 200ms linear, background-color 200ms linear,
+        transform 200ms linear;
+
+      svg {
+        transform: rotate(-90deg);
+        transition: transform 200ms linear;
       }
     }
-    + .accordion-content {
-      padding: 8px 24px 24px;
+    + .accordion__content {
+      padding: 0 24px 24px 24px;
       transition: padding 0ms ease-in-out;
+      transition: background-color 0ms ease-in-out;
       opacity: 1;
-      max-height: 9em;
-      transition: all 200ms linear;
+      max-height: fit-content;
+      transition: opacity 200ms linear, max-height 200ms linear;
       will-change: opacity, max-height;
-    }
-  }
-  .accordion-content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: padding 0ms ease-in-out;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-    p {
-      font-size: 14px;
-      font-weight: 300;
     }
   }
 }
 
+.accordion__content-line {
+  height: 100%;
+  width: 2px;
+  margin-right: 16px;
+  background-color: $base-accent;
+  border: 2px $base-accent;
+}
 // ------------ WORKS --------------
 
 .works {
