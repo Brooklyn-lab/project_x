@@ -256,7 +256,7 @@ section {
 
   &__container {
     border-radius: 8px;
-    background-image: url(/img/hero-bg@2x.webp);
+    background-image: url(../img/hero-bg@2x.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -426,10 +426,22 @@ section {
 }
 
 .accordion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  .accordion__column {
+    width: calc(50% - 8px);
+  }
+
   .accordion-item {
-    border-bottom: 1px solid #e5e5e5;
+    background-color: $base3;
     button[aria-expanded="true"] {
       border-bottom: 1px solid #03b5d2;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
   button {
@@ -437,10 +449,12 @@ section {
     display: block;
     text-align: left;
     width: 100%;
-    padding: 1em 0;
-    color: #7288a2;
-    font-size: 1.15rem;
-    font-weight: 400;
+    padding: 16px 12px 16px 24px;
+    color: $base1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.2px;
     border: none;
     background: none;
     outline: none;
@@ -496,6 +510,8 @@ section {
       }
     }
     + .accordion-content {
+      padding: 8px 24px 24px;
+      transition: padding 0ms ease-in-out;
       opacity: 1;
       max-height: 9em;
       transition: all 200ms linear;
@@ -506,12 +522,12 @@ section {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    transition: padding 0ms ease-in-out;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
     p {
-      font-size: 1rem;
+      font-size: 14px;
       font-weight: 300;
-      margin: 2em 0;
     }
   }
 }
