@@ -1,9 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="canonical" href="https://podoswroclaw.pl/" />
+    <title>PodOS – Profesjonalna pielęgnacja stóp we Wrocławiu</title>
+    <meta
+      name="description"
+      content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!"
+    />
+    <meta
+      name="keywords"
+      content="PodOS gabinet podologiczny we Wrocławiu, gabinet podologiczny Wrocław, pedicure medyczny Wrocław, leczenie wrastających paznokci Wrocław, usuwanie modzeli Wrocław, pielęgnacja stóp Wrocław, podologia dziecięca Wrocław, profilaktyka stóp cukrzycowych Wrocław, leczenie odcisków Wrocław, usuwanie kurzajek Wrocław, terapia na ból pięt Wrocław, pielęgnacja stóp Wrocław, pedicure medyczny, leczenie wrastających paznokci, usuwanie modzeli, pielęgnacja stóp, podologia dziecięca, profilaktyka stóp cukrzycowych, leczenie odcisków, usuwanie kurzajek, terapia na ból pięт, PodOS кабінет подологічний у Вроцлаві, медичний педикюр, лікування врослого нігтя, видалення мозолі, догляд за ногами, дитяча подологія, профілактика діабетичної стопи, лікування мозолів, видалення бородавок, лікування болю в п'яті, кабінет подології Вроцлав, медичний педикюр Вроцлав, лікування врослого нігтя Вроцлав, видалення мозолів Вроцлав, догляд за стопами ніг Вроцлав, педіатрична подологія Вроцлав, профілактика зубастих ніг Вроцлав, лікування мозолів Вроцлав, Видалення бородавок Вроцлав, Терапія болю п'ят Вроцлав, догляд за стопами ніг Вроцлав"
+    />
+    <meta
+      property="og:title"
+      content="PodOS - gabinet podologiczny we Wrocławiu"
+    />
+    <meta
+      property="og:description"
+      content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!"
+    />
+    <meta property="og:image" content="URL до зображення" />
+    <meta property="og:url" content="https://podoswroclaw.pl/" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="PodOS - gabinet podologiczny we Wrocławiu"
+    />
+    <meta
+      name="twitter:description"
+      content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!"
+    />
+    <meta name="twitter:image" content="URL до зображення" />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "PodOS",
+        "alternateName": "podoswroclaw.pl",
+        "url": "https://podoswroclaw.pl/",
+        "description": "PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!",
+        "image": "",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61569433260872",
+          "https://www.instagram.com/podos.wroclaw/"
+        ]
+      }
+    </script>
+    <link rel="alternate" hreflang="pl" href="https://podoswroclaw.pl/" />
+    <link rel="alternate" hreflang="uk" href="https://podoswroclaw.pl/ua/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://podoswroclaw.pl/"
+    />
+    <link
+      rel="icon"
+      href="./img/favico.ico"
+      type="image/x-icon"
+      width="32px"
+      height="32px"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +76,19 @@
     <link rel="stylesheet" href="./glide.core.min.css" />
     <link rel="stylesheet" href="./glide.theme.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4PNN5DN61N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "G-4PNN5DN61N")
+    </script>
   </head>
   <body>
     <div class="preloader">
@@ -31,60 +107,68 @@
           <span class="logo__text">PODOS</span>
         </a>
 
-        <nav class="nav">
+        <nav class="nav active">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">O mnie</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Dlaczego warto wybrać?</a>
+              <a class="nav__link" href="#about">O mnie</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Usługi i ceny</a>
+              <a class="nav__link" href="#why-us">Dlaczego warto wybrać?</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Adres</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Moje prace</a>
+              <a class="nav__link" href="#services">Usługi i ceny</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#socials">Adres</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a class="nav__link" href="#works">Moje prace</a>
+            </li> -->
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Kontakt</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="lang-switcher">
-          <li class="lang-switcher__item">
-            <a class="lang-switcher__link lang-switcher__link_active" href="#"
-              >PL</a
-            >
-          </li>
-          <li class="lang-switcher__item">
-            <a class="lang-switcher__link" href="#">UA</a>
-          </li>
-        </ul>
+        <div class="header__right-side">
+          <ul class="lang-switcher">
+            <li class="lang-switcher__item">
+              <a class="lang-switcher__link lang-switcher__link_active" href="#"
+                >PL</a
+              >
+            </li>
+            <li class="lang-switcher__item">
+              <a class="lang-switcher__link" href="#">UA</a>
+            </li>
+          </ul>
 
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="tel:+48574154801" class="contacts__link">
-              <img
-                src="./img/phone.svg"
-                width="16"
-                height="16"
-                alt="phone"
-                class="contacts__icon"
-              />
-              +48574154801
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:podoswroclaw@gmail.com" class="contacts__link">
-              <img
-                src="./img/mail.svg"
-                width="16"
-                height="11.5"
-                alt="email"
-                class="contacts__icon"
-              />
-              podoswroclaw@gmail.com
-            </a>
-          </li>
-        </ul>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="tel:+48574154801" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use xlink:href="/img/icons.svg#phone"></use>
+                </svg>
+                <span class="contacts__text">+48574154801</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:podoswroclaw@gmail.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use xlink:href="/img/icons.svg#mail"></use>
+                </svg>
+                <span class="contacts__text">podoswroclaw@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="burger" tabindex="0">
+            <div class="burger__label">
+              <span class="burger__label-span"></span>
+              <span class="burger__label-span"></span>
+              <span class="burger__label-span"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -99,7 +183,8 @@
           </div>
         </div>
       </section>
-      <section class="about">
+
+      <section class="about" id="about">
         <div class="container about__container">
           <div class="about__content">
             <div class="about__header">
@@ -130,8 +215,23 @@
           </div>
           <div class="about__image">
             <picture>
+              <source
+                srcset="./img/about-340@2x.webp 2x, ./img/about-340.webp 1x"
+                media="(max-width: 479.98px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/about-768@2x.webp 2x, ./img/about-768.webp 1x"
+                media="(max-width: 991.98px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/about-1440@2x.webp 2x, ./img/about-1440.webp 1x"
+                type="image/webp"
+              />
+
               <img
-                src="./img/about.png"
+                src="./img/about-1440.png"
                 width="590"
                 height="700"
                 alt="Olena Stepaniuk podolog"
@@ -140,7 +240,7 @@
           </div>
         </div>
       </section>
-      <section class="why-us">
+      <section class="why-us" id="why-us">
         <div class="container why-us__container">
           <ul class="why-us__image-list">
             <li class="why-us__image-item">
@@ -155,6 +255,37 @@
                 </picture>
               </div>
             </li>
+            <li class="why-us__content">
+              <div class="why-us__header">
+                <h2 class="why-us__title">Dlaczego warto wybrać PodOS?</h2>
+                <h3>
+                  PodOS to przestrzeń stworzona z myślą o Twoim komforcie i
+                  zdrowiu.
+                </h3>
+              </div>
+              <p class="why-us__text">
+                Oferta obejmuje profilaktykę i leczenie różnych form schorzeń:
+                wrastających paznokci, odcisków, modzeli, grzybic stóp i
+                paznokci itp.
+              </p>
+              <p class="why-us__text">
+                Gabinet wyposażony jest w nowoczesny i profesjonalny sprzęt.
+                Podczas zabiegów korzystam wyłącznie z profesjonalnych narzędzi
+                i specjalistycznych leków.
+              </p>
+              <p class="why-us__text">
+                Wszystkie instrumenty po zabiegach są sterylizowane w myjce
+                ultradźwiękowej oraz w autoklawie, po każdym zabiegu miejsce
+                pracy jest dezynfekowane, wszystkie jednorazowe urządzenia
+                zabezpieczające użyte podczas zabiegu należy utylizować zgodnie
+                z przepisami bezpieczeństwa i higieny pracy, co sprawia, że
+                ​​leczenie pacjentów w moim gabinecie jest bezpieczne.
+              </p>
+              <p class="why-us__text">
+                Jeśli szukasz skutecznych rozwiązań do pielęgnacji stóp, gabinet
+                PodOS,  będzie właściwym wyborem.
+              </p>
+            </li>
             <li class="why-us__image-item">
               <div class="why-us__image why-us__image_left-bottom">
                 <picture>
@@ -168,39 +299,9 @@
               </div>
             </li>
           </ul>
-          <div class="why-us__content">
-            <div class="why-us__header">
-              <h2 class="why-us__title">Dlaczego warto wybrać PodOS?</h2>
-              <h3>
-                PodOS to przestrzeń stworzona z myślą o Twoim komforcie i
-                zdrowiu.
-              </h3>
-            </div>
-            <p class="why-us__text">
-              Oferta obejmuje profilaktykę i leczenie różnych form schorzeń:
-              wrastających paznokci, odcisków, modzeli, grzybic stóp i paznokci
-              itp.
-            </p>
-            <p class="why-us__text">
-              Gabinet wyposażony jest w nowoczesny i profesjonalny sprzęt.
-              Podczas zabiegów korzystam wyłącznie z profesjonalnych narzędzi i
-              specjalistycznych leków.
-            </p>
-            <p class="why-us__text">
-              Wszystkie instrumenty po zabiegach są sterylizowane w myjce
-              ultradźwiękowej oraz w autoklawie, po każdym zabiegu miejsce pracy
-              jest dezynfekowane, wszystkie jednorazowe urządzenia
-              zabezpieczające użyte podczas zabiegu należy utylizować zgodnie z
-              przepisami bezpieczeństwa i higieny pracy, co sprawia, że
-              ​​leczenie pacjentów w moim gabinecie jest bezpieczne.
-            </p>
-            <p class="why-us__text">
-              Jeśli szukasz skutecznych rozwiązań do pielęgnacji stóp, gabinet
-              PodOS,  będzie właściwym wyborem.
-            </p>
-          </div>
         </div>
       </section>
+
       <section class="certificates">
         <div class="container">
           <div class="certificates__header">
@@ -214,7 +315,7 @@
             </p>
           </div>
 
-          <div class="glide">
+          <div class="glide glide-certificates">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
@@ -330,30 +431,16 @@
                 data-glide-dir="<"
                 class="glide__arrow glide__arrow--left"
               >
-                <svg
-                  viewBox="0 0 24 22"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
-                  />
+                <svg class="glide__arrow-icon">
+                  <use xlink:href="/img/icons.svg#slider-arrow"></use>
                 </svg>
               </button>
               <button
                 data-glide-dir=">"
                 class="glide__arrow glide__arrow--right"
               >
-                <svg
-                  viewBox="0 0 24 22"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
-                  />
+                <svg class="glide__arrow-icon">
+                  <use xlink:href="/img/icons.svg#slider-arrow"></use>
                 </svg>
               </button>
             </div>
@@ -361,7 +448,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services__header">
             <h2 class="services__title">Usługi i ceny w PodOS</h2>
@@ -389,18 +476,21 @@
           <div class="accordion">
             <div class="accordion__column">
               <div class="accordion__item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="accordion__title">Konsultacja</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                <button
+                  class="accordion__button"
+                  id="accordion-button-1"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Konsultacja</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
                 </button>
                 <div class="accordion__content">
                   <div class="accordion__content-wrapper">
@@ -420,19 +510,57 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-3" aria-expanded="false">
-                  <span class="accordion__title"
-                    >Pedicure podologiczny leczniczy</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                <button
+                  class="accordion__button"
+                  id="accordion-button-2"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Pedicure podologiczny</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 200
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Opracowanie podeszwy stóp, skrócenie i oczyszczenie
+                      paznokci, aplikacja preparatów kosmetycznych.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 90 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-3"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Pedicure podologiczny leczniczy</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
                 </button>
                 <div class="accordion__content">
                   <div class="accordion__content-wrapper">
@@ -453,19 +581,58 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-5" aria-expanded="false">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-4"
+                  aria-expanded="false"
+                >
                   <span class="accordion__title"
-                    >Pedicure SPA (pedicure japoński)</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                    >Pedicure klasyczny z lakierem hybrydowym</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
+                      <use href="./img/icons.svg#accordion-arrow"></use></svg
                   ></span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 220
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Opracowanie podeszwy stóp, skrócenie i oczyszczenie
+                      paznokci, naniesienie pokrycia hybrydowego, aplikacja
+                      preparatów kosmetycznych.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 120 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-5"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Pedicure SPA (pedicure japoński)</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
                 </button>
                 <div class="accordion__content">
                   <div class="accordion__content-wrapper">
@@ -489,242 +656,20 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-7" aria-expanded="false">
-                  <span class="accordion__title"
-                    >Kąpiele parafinowe stóp (z masażem)</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 100
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      60 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-9" aria-expanded="false">
-                  <span class="accordion__title">Grzybica paznokci</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 150
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Diagnoza podologiczna, opracowanie i leczenie, aplikacja
-                      produkty leczniczego.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 60 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-11" aria-expanded="false">
-                  <span class="accordion__title">Paznokieć wrastający</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 100
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Opracowanie wrastającej części i leczenie paznokcia.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 60 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-13" aria-expanded="false">
-                  <span class="accordion__title">Leczenie pękających pięt</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 150
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Opracowanie pęknięć, aplikacja preparatów leczniczych,
-                      nałożenie bandaża.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 60 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-15" aria-expanded="false">
-                  <span class="accordion__title">Klamra tytanowa</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 200
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Poprawa kształtu, zapobieganie procesu zapalnego i
-                      wrastaniu paznokcia w skórę.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 30 min. (1 palec)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion__column">
-              <div class="accordion__item">
-                <button id="accordion-button-2" aria-expanded="false">
-                  <span class="accordion__title">Pedicure podologiczny</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 200
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Opracowanie podeszwy stóp, skrócenie i oczyszczenie
-                      paznokci, aplikacja preparatów kosmetycznych.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 90 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-4" aria-expanded="false">
-                  <span class="accordion__title"
-                    >Pedicure klasyczny z lakierem hybrydowym</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
-                </button>
-                <div class="accordion__content">
-                  <div class="accordion__content-wrapper">
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Cena:</span> od 220
-                      zł.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Zabieg:</span>
-                      Opracowanie podeszwy stóp, skrócenie i oczyszczenie
-                      paznokci, naniesienie pokrycia hybrydowego, aplikacja
-                      preparatów kosmetycznych.
-                    </p>
-                    <p class="accordion__text">
-                      <span class="accordion__text--accent">Czas trwania:</span>
-                      do 120 min.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__item">
-                <button id="accordion-button-6" aria-expanded="false">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-6"
+                  aria-expanded="false"
+                >
                   <span class="accordion__title"
                     >Masaż stóp z elementami refleksologii</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                  ><span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
+                      <use href="./img/icons.svg#accordion-arrow"></use></svg
                   ></span>
                 </button>
                 <div class="accordion__content">
@@ -741,18 +686,51 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-8" aria-expanded="false">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-7"
+                  aria-expanded="false"
+                >
                   <span class="accordion__title"
-                    >Kąpiele parafinowe stóp i dłoni (z masażem)</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                    >Kąpiele parafinowe stóp (z masażem)</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 100
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      60 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-8"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Kąpiele parafinowe stóp i dłoni (z masażem)</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use></svg
                   ></span>
                 </button>
                 <div class="accordion__content">
@@ -773,19 +751,59 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="accordion__column">
               <div class="accordion__item">
-                <button id="accordion-button-10" aria-expanded="false">
-                  <span class="accordion__title"
-                    >Terapia brodawek wirusowych</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                <button
+                  class="accordion__button"
+                  id="accordion-button-9"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Grzybica paznokci</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 150
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Diagnoza podologiczna, opracowanie i leczenie, aplikacja
+                      produkty leczniczego.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 60 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-10"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Terapia brodawek wirusowych</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use></svg
                   ></span>
                 </button>
                 <div class="accordion__content">
@@ -806,18 +824,57 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-12" aria-expanded="false">
-                  <span class="accordion__title">Usunięcie modzela/odcisku</span
-                  ><span class="icon" aria-hidden="true"
-                    ><svg
+                <button
+                  class="accordion__button"
+                  id="accordion-button-11"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Paznokieć wrastający</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      /></svg
-                  ></span>
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 100
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Opracowanie wrastającej części i leczenie paznokcia.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 60 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-12"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Usunięcie modzela/odcisku</span
+                  >
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
                 </button>
                 <div class="accordion__content">
                   <div class="accordion__content-wrapper">
@@ -837,18 +894,91 @@
                 </div>
               </div>
               <div class="accordion__item">
-                <button id="accordion-button-14" aria-expanded="false">
-                  <span class="accordion__title"
-                    >Instalacja systemu UniBrace</span
+                <button
+                  class="accordion__button"
+                  id="accordion-button-13"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Leczenie pękających pięt</span
                   ><span class="icon" aria-hidden="true">
                     <svg
                       width="16"
                       height="16"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M2.344.929A1 1 0 0 0 .93 2.343L2.344.93Zm12.02 14.435a1 1 0 0 0 1-1v-9a1 1 0 1 0-2 0v8h-8a1 1 0 1 0 0 2h9ZM.93 2.344 13.658 15.07l1.414-1.414L2.344.929.93 2.343Z"
-                      />
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 150
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Opracowanie pęknięć, aplikacja preparatów leczniczych,
+                      nałożenie bandaża.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 60 min.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-14"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title"
+                    >Instalacja systemu UniBrace</span
+                  >
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__content">
+                  <div class="accordion__content-wrapper">
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Cena:</span> od 200
+                      zł.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Zabieg:</span>
+                      Poprawa kształtu, zapobieganie procesu zapalnego i
+                      wrastaniu paznokcia w skórę.
+                    </p>
+                    <p class="accordion__text">
+                      <span class="accordion__text--accent">Czas trwania:</span>
+                      do 30 min. (1 palec)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button
+                  class="accordion__button"
+                  id="accordion-button-15"
+                  aria-expanded="false"
+                >
+                  <span class="accordion__title">Klamra tytanowa</span
+                  ><span class="icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="./img/icons.svg#accordion-arrow"></use>
                     </svg>
                   </span>
                 </button>
@@ -875,7 +1005,73 @@
         </div>
       </section>
 
-      <section class="works">
+      <section class="address" id="socials">
+        <div class="container">
+          <div class="address__header">
+            <h2 class="address__title">Adres</h2>
+            <div class="address__header-content">
+              <p class="address__text">53-680 Wrocław, ul. Braniborska 61/13</p>
+              <p class="address__text">
+                (budynek Legnicka Residence, 2 piętro, Gabinet przy studii
+                'Pracownia fryzur')
+              </p>
+              <ul>
+                <li class="address__text-title">Dodatkowo:</li>
+                <li class="address__text">- parking</li>
+                <li class="address__text">
+                  - możliwość wjazdu osób niepełnosprawnych 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.8008212584414!2d17.005369376445028!3d51.112134971726185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc206efb1a915%3A0xed5b779e497e2d24!2sBraniborska%2061%2C%2053-680%20Wroc%C5%82aw!5e0!3m2!1sru!2spl!4v1733677121131!5m2!1sru!2spl"
+            width="100%"
+            height="390"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <ul class="socials">
+            <li class="socials__item">
+              <a
+                href="https://facebook.com/people/Podos-gabinet-podologiczny-Wroc%C5%82aw/61569433260872/"
+                target="_blank"
+                class="socials__link"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="/img/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                href="https://www.instagram.com/podos.wroclaw/"
+                target="_blank"
+                class="socials__link"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="/img/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                href="https://www.google.com/maps/place/Braniborska+61,+53-680+Wroc%C5%82aw/@51.1124464,17.0076063,19z/data=!4m6!3m5!1s0x470fc206efb1a915:0xed5b779e497e2d24!8m2!3d51.112135!4d17.0079443!16s%2Fg%2F11csjq3m7d?authuser=4&entry=tts&g_ep=EgoyMDI0MTIwMy4wIPu8ASoASAFQAw%3D%3D"
+                target="_blank"
+                class="socials__link"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="/img/icons.svg#pin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="works" id="works">
         <div class="container">
           <div class="works__header">
             <div class="works__header-item--left">
@@ -1019,39 +1215,131 @@
                 data-glide-dir="<"
                 class="glide__arrow glide__arrow--left"
               >
-                <svg
-                  viewBox="0 0 24 22"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
-                  />
+                <svg class="glide__arrow-icon">
+                  <use xlink:href="/img/icons.svg#slider-arrow"></use>
                 </svg>
               </button>
               <button
                 data-glide-dir=">"
                 class="glide__arrow glide__arrow--right"
               >
-                <svg
-                  viewBox="0 0 24 22"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.688 9.625a1.375 1.375 0 1 0 0 2.75v-2.75Zm21.597 2.347a1.375 1.375 0 0 0 0-1.944l-8.75-8.75a1.375 1.375 0 1 0-1.945 1.944L20.368 11l-7.778 7.778a1.375 1.375 0 1 0 1.944 1.945l8.75-8.75Zm-21.598.403h20.625v-2.75H1.688v2.75Z"
-                  />
+                <svg class="glide__arrow-icon">
+                  <use xlink:href="/img/icons.svg#slider-arrow"></use>
                 </svg>
               </button>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer></footer>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__header">
+          <h2 class="footer__title">
+            Gabinet PodOS – zaufaj profesjonaliście.
+          </h2>
+          <div class="footer__header-content">
+            <p class="footer__text">
+              To nie tylko miejsce zabiegów, ale także swego rodzaju centrum
+              edukacyjne, gdzie praktycznie pokazuję pacjentom i przekazuję
+              zalecenia dotyczące codziennej pielęgnacji stóp.
+            </p>
+            <p class="footer__text">
+              Opowiem o znaczeniu prawidłowego odżywiania i bilansu wodnego, o
+              wpływie różnych chorób na stan skóry i paznokci. Jak stosować
+              witaminy i wiele innych zaleceń, aby utrzymać zdrowie stóp i ciała
+              jako całości.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="contact-form__header">
+            <h3 class="contact-form__title">Kontakt</h3>
+            <p>Skontaktuj się ze mną za pomocą poniższego formularza.</p>
+          </div>
+          <form
+            id="contact-form"
+            action=""
+            method=""
+            enctype="text/plain"
+            class="form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="b73c0779-3ca0-4f68-bdfc-f5592a047fb9"
+            />
+            <input type="text" name="honeypot" style="display: none" />
+
+            <label
+              class="form__input-title form__input_required"
+              for="name"
+              id="name-label"
+              >Imię i nazwisko</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+
+            <label
+              class="form__input-title form__input_required"
+              for="phone"
+              id="phone-label"
+              >Numer telefonu</label
+            >
+            <input
+              class="form__input"
+              type="number"
+              id="tel"
+              name="tel"
+              pattern="^\+48[1-9]{9}|\+38[1-9]{10}$"
+              required
+            />
+
+            <label
+              class="form__input-title form__input_required"
+              for="email"
+              id="email-label"
+              >Adres e-mail</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label class="form__input-title" for="message" id="message-label"
+              >Wiadomość</label
+            >
+            <textarea
+              class="form__input form__input_textarea"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+
+            <button class="form__button" type="submit" id="submit-btn">
+              Wyślij
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">
+          © 2024 PodOS. Wszystkie prawa zastrzeżone.
+        </p>
+      </div>
+    </footer>
     <script src="./glide.min.js" type="module"></script>
+    <script src="./sendmail.js"></script>
     <script src="./main.js" type="module"></script>
   </body>
 </html>
