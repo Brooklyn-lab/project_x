@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .glide-works .glide__slide {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        min-height: 400px;
+      }
+
+      .glide-works .glide__slide img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .glide-works .glide__slide img.before-image {
+        z-index: 1;
+        /* Crop half of the front image */
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 
+SEPERATE -webkit-slider-thumb AND -moz-range-thumb FOR CHROME AND FIREFOX, OTHERWISE RANGE INPUT CUSTOM STYLES DON'T WORK 
+*/
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 7px;
+        min-height: 400px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid #c2c2c2;
+        border-radius: 0;
+      }
+
+      .slider::-moz-range-thumb {
+        -moz-appearance: none;
+        width: 7px;
+        min-height: 400px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid #c2c2c2;
+        border-radius: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glide glide-works">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img
+              class="before-image"
+              src="./img/works/new-1.png"
+              alt="before"
+            />
+            <img class="after-image" src="./img/works/old-1.png" alt="after" />
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              name="slider"
+              id="slider"
+            />
+          </li>
+          <li class="glide__slide">
+            <img
+              class="before-image"
+              src="./img/works/new-1.png"
+              alt="before"
+            />
+            <img class="after-image" src="./img/works/old-1.png" alt="after" />
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              name="slider"
+              id="slider"
+            />
+          </li>
+          <li class="glide__slide">
+            <img
+              class="before-image"
+              src="./img/works/new-1.png"
+              alt="before"
+            />
+            <img class="after-image" src="./img/works/old-1.png" alt="after" />
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              name="slider"
+              id="slider"
+            />
+          </li>
+          <li class="glide__slide">
+            <img
+              class="before-image"
+              src="./img/works/new-1.png"
+              alt="before"
+            />
+            <img class="after-image" src="./img/works/old-1.png" alt="after" />
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              name="slider"
+              id="slider"
+            />
+          </li>
+          <li class="glide__slide">
+            <img
+              class="before-image"
+              src="./img/works/new-1.png"
+              alt="before"
+            />
+            <img class="after-image" src="./img/works/old-1.png" alt="after" />
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              name="slider"
+              id="slider"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div data-glide-el="controls" class="controls">
+        <button data-glide-dir="<" class="glide__arrow glide__arrow--left">
+          <svg class="glide__arrow-icon">
+            <use xlink:href="./img/icons.svg#slider-arrow"></use>
+          </svg>
+        </button>
+        <button data-glide-dir=">" class="glide__arrow glide__arrow--right">
+          <svg class="glide__arrow-icon">
+            <use xlink:href="./img/icons.svg#slider-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./glide.min.js" type="module"></script>
+
+    <script>
+      new Glide(".glide-works", {
+        type: "carousel",
+        768: { perView: 1.2 },
+        991.98: { perView: 3 },
+        perView: 4.5,
+        gap: 16,
+      }).mount()
+
+      const glideWorks = document.querySelector(".glide-works")
+
+      if (glideWorks) {
+        const slides = glideWorks.querySelectorAll(".glide__slide")
+
+        slides.forEach((slide) => {
+          // Додати необхідну логіку для кожного слайду
+          console.log(slide)
+
+          const slider = slide.querySelector(".slider")
+          const beforeImage = slide.querySelector(".before-image")
+
+          console.log(
+            'document.querySelectorAll(".glide__slide")',
+            document.querySelectorAll(".glide__slide")
+          )
+
+          slider.addEventListener("input", function () {
+            beforeImage.style.clipPath = `polygon(0 0, ${this.value}% 0, ${this.value}% 100%, 0 100%)`
+          })
+        })
+      }
+    </script>
+  </body>
+</html>
