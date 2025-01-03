@@ -20,7 +20,7 @@ $logo: #162221;
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -82,18 +82,12 @@ $md4: 479.98;
   margin: 0 auto;
   width: 100%;
 
-  // @media (max-width: ($md1 + px)) {
-  //   max-width: 992px;
-  //   padding: 0 20px;
-  // }
-
   @media (max-width: ($md2 + px)) {
     max-width: 728px;
     padding: 0 20px;
   }
 
   @media (max-width: ($md4 + px)) {
-    // max-width: 340px;
     padding: 0 10px;
   }
 }
@@ -138,7 +132,7 @@ h3 {
 
 p {
   color: $base0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
 
